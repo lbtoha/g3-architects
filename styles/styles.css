@@ -1,20 +1,12 @@
 /* all fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
 
 :root {
-  --font-secondary: "Inter", sans-serif;
-  --body-bg: #aaaaaa;
+  --color-dark: #131313;
+  --color-light: #727272;
+  --color-brand: #ff900e;
+  --bg-color: rgba(255, 144, 14, 0.1);
   --color-white: #ffffff;
-  --color-hotpink: #e02c6d;
-  --color-primary: #3a3a3a;
-  --color-pricing: rgba(0, 0, 0, 0.87);
-  --color-products-title: #18191f;
-  --color-products-description: #787885;
-  --color-ratting-star: #fb8200;
-  --color-ratting-point: #5e6366;
-  --color-feature-title: #0a0826;
-  --color-feature-description: #6c6c6c;
-  --shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* reset project */
@@ -25,8 +17,8 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  background: var(--color-white);
 }
 
 li {
@@ -36,61 +28,88 @@ a {
   text-decoration: none;
 }
 
-section {
-  margin-top: 100px;
+main {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .container {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
-  /* background: coral; */
+}
+section {
+  margin-top: 130px;
 }
 
 /* display none */
 .d-none {
   display: none;
 }
-/* =========================
-   button normal
-============================ */
-.btn-normal {
-  font-weight: 700;
-  font-size: 16px;
-  color: #ffffff;
-  background: var(--color-hotpink);
-  padding: 10px 24px;
-  border: 0;
-  cursor: pointer;
-}
 
 /* =========================
-   button rounded
+   main title
 ============================ */
-.btn-rounded {
+.main-title {
   font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: var(--color-dark);
+}
+
+/* =========================
+   section title
+============================ */
+.section-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--color-dark);
+}
+
+/* =========================
+   sub-section title
+============================ */
+.sub-section-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--color-dark);
+}
+
+/* =========================
+   primary text
+============================ */
+.primary-text {
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
+  color: var(--color-light);
+}
+/* =========================
+   button primary
+============================ */
+.btn-primary {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
   color: #ffffff;
-  background: var(--color-hotpink);
-  border-radius: calc(100px / 3);
-  padding: 10px 24px;
+  background: var(--color-brand);
+  padding: 20px 25px;
   border: 0;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.btn-transparent {
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--color-hotpink);
-  background: transparent;
-  padding: 10px 24px;
-  border: 0;
-  cursor: pointer;
-}
-
-.btn-normal > i,
-.btn-rounded > i,
-.btn-transparent > i {
-  padding-left: 8px;
+/* =========================
+   header background
+============================ */
+.header-background {
+  background: rgba(255, 144, 14, 0.1);
+  width: 90%;
+  margin: 0 auto;
+  height: 900px;
 }
 
 /* =========================
@@ -106,8 +125,10 @@ section {
 
 .logo {
   font-weight: 700;
-  font-size: 24px;
-  color: #3a3a3a;
+  font-size: 45px;
+  line-height: 53px;
+  text-align: center;
+  color: var(--color-dark);
 }
 
 .nav-items .nav-item-list {
@@ -122,230 +143,125 @@ section {
 }
 
 .nav-item-list li a {
-  font-weight: 600;
-  font-size: 16px;
-  color: #3a3a3a;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #424242;
 }
 
 /* =========================
-   banner style
+   hero style
 ============================ */
-.banner {
+.hero-section {
+  text-align: center;
+  margin-top: 102px;
+}
+
+.hero-section .primary-text {
+  margin-top: 30px;
+}
+
+.hero-section .btn-primary {
+  margin-top: 33px;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  top: 50px;
+}
+
+/* =========================
+   feature section style
+============================ */
+.feature-wrapper {
+  margin-top: 310px;
   display: flex;
   align-items: center;
+  column-gap: 65px;
   justify-content: space-between;
-  column-gap: 88px;
 }
 
-.main-title {
-  font-weight: 700;
-  font-size: 52px;
-  line-height: 70px;
-  color: #3a3a3a;
-  padding-bottom: 16px;
-  margin-top: 40px;
+.feature-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-basis: 50%;
+  gap: 24px;
 }
 
-.banner-description {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #3a3a3a;
-  padding-bottom: 16px;
+.feature-image img {
+  width: 260px;
+  height: 250px;
 }
 
-.btn-rounded i {
-  padding-left: 8px;
+.feature-info {
+  flex-basis: 50%;
 }
 
-.banner-image {
-  background-image: url("../images/main-camera.png"), url("../images/Circle-design.svg");
-  background-size: 440px 414px, 475px 2475px;
-  width: 67%;
-  height: 475px;
-  background-repeat: no-repeat;
-  background-position: right;
+.feature-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--color-dark);
+  margin-bottom: 24px;
 }
 
-.banner-image img {
-  width: 440px;
-  height: 414px;
+.color-light {
+  color: var(--color-light);
 }
 
+.color-brand {
+  color: var(--color-brand);
+}
+
+.feature-info .btn-primary {
+  margin-top: 32px;
+}
+
+/* =========================
+   love and enjoy section style
+============================ */
+.love-section-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.love-section-text {
+  flex-basis: 45%;
+}
+
+.love-section-image {
+  flex-basis: 55%;
+}
+.love-section-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  padding-left: 25px;
+  border-left: 3px solid var(--color-brand);
+  margin-bottom: 24px;
+}
+
+.love-section-item {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 25px 20px 25px 25px;
+  margin-top: 10px;
+}
 /* =========================
    brand style
 ============================ */
 .brand {
   display: flex;
   align-items: center;
-  column-gap: 60px;
+  column-gap: 155px;
   justify-content: center;
   flex-wrap: wrap;
   row-gap: 30px;
   padding: 41px 0;
   background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
-}
-
-/* =========================
-   popular items style
-============================ */
-.section-title {
-  font-weight: 600;
-  font-size: 28px;
-  padding-bottom: 50px;
-  color: #3a3a3a;
-  text-align: center;
-}
-
-.main-items-container {
-  margin-bottom: 174px;
-}
-.popular-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.item {
-  padding: 17px 15px;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  width: 330px;
-}
-
-.item img {
-  object-fit: cover;
-}
-
-.product-title {
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 40px;
-  color: #18191f;
-  padding-bottom: 6px;
-}
-
-.product-price {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  color: rgba(0, 0, 0, 0.87);
-  padding-bottom: 10px;
-}
-
-.product-ratting {
-  padding-bottom: 5px;
-}
-
-.fill-icon {
-  color: #ffc014;
-  width: 12px;
-  height: 12px;
-  margin-right: 5px;
-}
-
-.empty-icon {
-  color: #aeaeae;
-  width: 12px;
-  height: 12px;
-  opacity: 0.25;
-}
-
-.ratting-d {
-  font-weight: 400;
-  font-size: 14.6912px;
-  color: #a2a2a2;
-  margin-left: 6px;
-}
-
-.product-description {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0.018em;
-  color: #787885;
-}
-
-.btn-transparent i {
-  padding-left: 8px;
-}
-
-.main-items-container button {
-  margin: 10px 0px 10px 0;
-  position: relative;
-  float: right;
-}
-
-/* =========================
-   featured products style
-============================ */
-.feature-products {
-  display: flex;
-  column-gap: 96px;
-  align-items: center;
-  justify-content: center;
-  /* flex-wrap: wrap; */
-}
-
-.feature-products-image img {
-  width: 404px;
-  height: 270px;
-}
-
-.feature-product-title {
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 60px;
-  color: #0a0826;
-  margin-bottom: 20px;
-}
-
-.feature-product-discription {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 28px;
-  color: #6c6c6c;
-  width: 70%;
-  margin-bottom: 16px;
-}
-
-/* =========================
-   footer style
-============================ */
-footer {
-  margin-top: 100px;
-}
-.footer-container {
-  padding-top: 50px;
-  background: #0a0826;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-.logo-footer {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  color: #ffffff;
-}
-
-.copyright {
-  font-family: var(--font-secondary);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  font-feature-settings: "liga" off;
-  color: #d9dbe1;
-  padding-bottom: 17px;
-}
-
-.social-media i {
-  width: 17px;
-  height: 17px;
-  padding: 0 15px;
-  color: var(--color-white);
 }
