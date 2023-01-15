@@ -1,5 +1,5 @@
 /* responsive style */
-@media only screen and (max-width: 36rem) {
+@media only screen and (max-width: 576px) {
   :root {
     font-size: 10px;
   }
@@ -16,7 +16,7 @@
 ============================ */
   .header-background {
     background: rgba(255, 144, 14, 0.1);
-    height: 40rem;
+    height: 42rem;
   }
 
   .navbar {
@@ -48,7 +48,11 @@
   }
   .hero-section {
     margin-top: 3.125rem;
-    background-image: linear-gradient(rgba(32, 34, 34, 0.171), rgba(29, 30, 31, 0.418), rgba(5, 4, 4, 0.993));
+    background-image: linear-gradient(
+      rgba(32, 34, 34, 0.171),
+      rgba(29, 30, 31, 0.418),
+      rgba(5, 4, 4, 0.993)
+    );
     background-repeat: no-repeat;
     background-size: cover;
     position: center center;
@@ -76,44 +80,26 @@
    feature section style
 ============================ */
   .feature-wrapper {
-    margin-top: 8rem;
+    margin-top: 5rem;
     flex-direction: column;
     justify-content: space-between;
   }
 
   .feature-image {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    flex-basis: 50%;
+    grid-template-columns: repeat(1, 1fr);
+    flex-basis: 100%;
     gap: 1.5rem;
   }
 
-  .feature-image img {
-    width: 16.25rem;
-    height: 15.625rem;
-  }
-
   .feature-info {
-    flex-basis: 50%;
+    flex-basis: 100%;
   }
 
   .feature-title {
-    font-weight: 500;
-    font-size: 2.8125rem;
-    line-height: 3.3125rem;
-    color: var(--color-dark);
-    margin-bottom: 1.5rem;
+    margin-top: 1.9375rem;
   }
 
-  .color-light {
-    color: var(--color-light);
-  }
-
-  .color-brand {
-    color: var(--color-brand);
-  }
-
-  .feature-info .btn-primary {
-    margin-top: 2rem;
+  .feature-title .primary-text {
+    width: 100%;
   }
 }

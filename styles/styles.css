@@ -109,7 +109,7 @@ section {
   background: rgba(255, 144, 14, 0.1);
   width: 90%;
   margin: 0 auto;
-  height: 56.25rem;
+  height: 61.25rem;
 }
 
 /* =========================
@@ -179,7 +179,7 @@ section {
    feature section style
 ============================ */
 .feature-wrapper {
-  margin-top: 19.375rem;
+  margin-top: 21.25rem;
   display: flex;
   align-items: center;
   column-gap: 4.0625rem;
