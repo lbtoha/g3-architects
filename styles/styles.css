@@ -38,7 +38,7 @@ main {
   margin: 0 auto;
 }
 section {
-  margin-top: 130px;
+  margin-top: 8.125rem;
 }
 
 /* display none */
@@ -51,8 +51,8 @@ section {
 ============================ */
 .main-title {
   font-weight: 700;
-  font-size: 64px;
-  line-height: 75px;
+  font-size: 4rem;
+  line-height: 4.6875rem;
   text-align: center;
   color: var(--color-dark);
 }
@@ -62,8 +62,8 @@ section {
 ============================ */
 .section-title {
   font-weight: 700;
-  font-size: 45px;
-  line-height: 53px;
+  font-size: 2.8125rem;
+  line-height: 3.3125rem;
   color: var(--color-dark);
 }
 
@@ -72,8 +72,8 @@ section {
 ============================ */
 .sub-section-title {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
   color: var(--color-dark);
 }
 
@@ -82,8 +82,8 @@ section {
 ============================ */
 .primary-text {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   color: var(--color-light);
 }
 /* =========================
@@ -91,14 +91,14 @@ section {
 ============================ */
 .btn-primary {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
   text-align: center;
   color: #ffffff;
   background: var(--color-brand);
-  padding: 20px 25px;
+  padding: 1.25rem 1.5625rem;
   border: 0;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   cursor: pointer;
 }
 
@@ -109,7 +109,7 @@ section {
   background: rgba(255, 144, 14, 0.1);
   width: 90%;
   margin: 0 auto;
-  height: 900px;
+  height: 56.25rem;
 }
 
 /* =========================
@@ -120,13 +120,13 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0;
+  padding: 2.5rem 0;
 }
 
 .logo {
   font-weight: 700;
-  font-size: 45px;
-  line-height: 53px;
+  font-size: 2.8125rem;
+  line-height: 3.3125rem;
   text-align: center;
   color: var(--color-dark);
 }
@@ -135,16 +135,20 @@ section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  column-gap: 34px;
+  column-gap: 2.125rem;
 }
 
 .nav-items .nav-item-list li {
   display: inline-block;
 }
 
+.nav-items .nav-item-list li:hover a {
+  color: var(--color-dark);
+}
+
 .nav-item-list li a {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center;
   color: #424242;
 }
@@ -154,31 +158,31 @@ section {
 ============================ */
 .hero-section {
   text-align: center;
-  margin-top: 102px;
+  margin-top: 6.375rem;
 }
 
 .hero-section .primary-text {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .hero-section .btn-primary {
-  margin-top: 33px;
+  margin-top: 2.0625rem;
 }
 
 .hero-image {
   position: relative;
   width: 100%;
-  top: 50px;
+  top: 3.125rem;
 }
 
 /* =========================
    feature section style
 ============================ */
 .feature-wrapper {
-  margin-top: 310px;
+  margin-top: 19.375rem;
   display: flex;
   align-items: center;
-  column-gap: 65px;
+  column-gap: 4.0625rem;
   justify-content: space-between;
 }
 
@@ -186,12 +190,12 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   flex-basis: 50%;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .feature-image img {
-  width: 260px;
-  height: 250px;
+  width: 16.25rem;
+  height: 15.625rem;
 }
 
 .feature-info {
@@ -200,10 +204,10 @@ section {
 
 .feature-title {
   font-weight: 500;
-  font-size: 45px;
-  line-height: 53px;
+  font-size: 2.8125rem;
+  line-height: 3.3125rem;
   color: var(--color-dark);
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .color-light {
@@ -215,7 +219,7 @@ section {
 }
 
 .feature-info .btn-primary {
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 /* =========================
@@ -224,7 +228,7 @@ section {
 .love-section-wrapper {
   display: flex;
   align-items: center;
-  column-gap: 50px;
+  column-gap: 3.125rem;
 }
 
 .love-section-text {
@@ -239,29 +243,41 @@ section {
   height: 100%;
 }
 
+.love-section-image .btn-primary {
+  position: relative;
+  top: -4.375rem;
+  left: -3.125rem;
+}
+
+.btn-big {
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 4.375rem;
+}
+
 .section-header {
-  padding-left: 25px;
-  border-left: 3px solid var(--color-brand);
-  margin-bottom: 24px;
+  padding-left: 1.5625rem;
+  border-left: 0.1875rem solid var(--color-brand);
+  margin-bottom: 1.5rem;
 }
 
 .love-section-item {
   background: #ffffff;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
-  border-radius: 8px;
-  padding: 25px 20px 25px 25px;
-  margin-top: 10px;
+  box-shadow: 0rem 0.25rem 1.875rem rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  padding: 1.5625rem 1.25rem 1.5625rem 1.5625rem;
+  margin-top: 0.625rem;
 }
 
 /* =========================
    some facts style
 ============================ */
 .facts-section-header {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 
 .facts-section-header .section-title {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .facts-section-header .primary-text {
@@ -271,17 +287,17 @@ section {
 .our-works {
   display: flex;
   align-items: center;
-  column-gap: 80px;
+  column-gap: 5rem;
   justify-content: center;
   flex-wrap: wrap;
-  row-gap: 30px;
+  row-gap: 1.875rem;
 }
 
 .work {
   text-align: center;
-  border: 1px solid var(--color-brand);
-  border-radius: 5px;
-  padding: 35px 25px;
+  border: 0.0625rem solid var(--color-brand);
+  border-radius: 0.3125rem;
+  padding: 2.1875rem 1.5625rem;
   box-shadow: var(--bg-color);
 }
 
@@ -290,22 +306,22 @@ section {
 }
 
 .work img {
-  width: 45.22px;
-  height: 45.22px;
-  margin-bottom: 10px;
+  width: 2.8262rem;
+  height: 2.8262rem;
+  margin-bottom: 0.625rem;
 }
 
 .work-number {
   font-weight: 600;
-  font-size: 45px;
-  line-height: 53px;
+  font-size: 2.8125rem;
+  line-height: 3.3125rem;
   color: #424242;
 }
 
 .work-text {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
   color: #727272;
 }
 
@@ -314,7 +330,7 @@ section {
 ============================ */
 .brand-section-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .brand-section-description {
@@ -325,13 +341,13 @@ section {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  row-gap: 30px;
-  padding-top: 50px;
+  row-gap: 1.875rem;
+  padding-top: 3.125rem;
 }
 
 .brand img {
-  width: 152px;
-  height: 50px;
+  width: 9.5rem;
+  height: 3.125rem;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
@@ -341,14 +357,14 @@ section {
 ============================ */
 .footer-content {
   background: #fff4e7;
-  margin: 130px 0;
+  margin: 8.125rem 0;
 }
 
 .footer-content p {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
   text-align: center;
   color: #424242;
-  padding: 30px 0;
+  padding: 1.875rem 0;
 }
