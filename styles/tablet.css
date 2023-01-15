@@ -1,0 +1,19 @@
+@media only screen and (min-width: 577px) and (max-width: 991.98px) {
+  :root {
+    font-size: 12px;
+  }
+
+  /* =========================
+   navbar style
+============================ */
+  .header-background {
+    height: 53rem;
+  }
+
+  /* =========================
+   hero style
+============================ */
+  .hero-section {
+    margin-top: 4.125rem;
+  }
+}
