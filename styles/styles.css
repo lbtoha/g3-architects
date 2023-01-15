@@ -38,7 +38,7 @@ main {
   margin: 0 auto;
 }
 section {
-  margin-top: 8.125rem;
+  margin-top: 6.125rem;
 }
 
 /* =========================
@@ -186,7 +186,7 @@ section {
    feature section style
 ============================ */
 .feature-wrapper {
-  margin-top: 21.25rem;
+  margin-top: 19.25rem;
   display: flex;
   align-items: center;
   column-gap: 4.0625rem;
@@ -279,8 +279,12 @@ section {
 /* =========================
    some facts style
 ============================ */
+.facts-section-wrapper {
+  margin-top: 1.25rem;
+}
+
 .facts-section-header {
-  margin-bottom: 6.25rem;
+  margin-bottom: 5.25rem;
 }
 
 .facts-section-header .section-title {
@@ -337,12 +341,12 @@ section {
    client style
 ============================ */
 .client-section-wrapper {
-  padding-top: 8.15rem;
+  padding-top: 6.25rem;
   text-align: center;
 }
 
 .client-description {
-  margin: 3rem 0;
+  margin: 2.5rem 0;
 }
 .clients {
   display: flex;

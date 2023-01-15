@@ -7,7 +7,7 @@
    navbar style
 ============================ */
   .header-background {
-    height: 53rem;
+    height: 55rem;
   }
 
   /* =========================
@@ -15,5 +15,39 @@
 ============================ */
   .hero-section {
     margin-top: 4.125rem;
+  }
+
+  /* =========================
+   feature section style
+============================ */
+  .feature-wrapper {
+    margin-top: 22rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .feature-image {
+    display: grid;
+    flex-basis: 100%;
+    gap: 2.5rem;
+  }
+
+  .feature-image img {
+    width: 28rem;
+    height: 26rem;
+  }
+
+  .feature-info {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .feature-title {
+    margin-top: 2.9375rem;
+  }
+
+  .feature-info .primary-text {
+    width: 50%;
+    margin: 0 auto;
   }
 }
