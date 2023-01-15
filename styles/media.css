@@ -102,4 +102,50 @@
   .feature-title .primary-text {
     width: 100%;
   }
+  /* =========================
+   love and enjoy section style
+============================ */
+  .love-section-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .love-section-text {
+    flex-basis: 100%;
+  }
+
+  .love-section-image {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.5rem;
+    margin-top: 3.875rem;
+  }
+
+  .love-section-image img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .love-section-image .btn-primary {
+    position: inherit;
+  }
+
+  /* =========================
+   some facts style
+============================ */
+  .facts-section-header {
+    text-align: center;
+  }
+  .facts-section-header .primary-text {
+    width: 100%;
+  }
+
+  /* =========================
+   brand style
+============================ */
+  .brand img {
+    width: 7rem;
+    height: 4rem;
+  }
 }

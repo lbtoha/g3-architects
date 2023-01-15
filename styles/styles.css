@@ -326,6 +326,59 @@ section {
 }
 
 /* =========================
+   client style
+============================ */
+.client-section-wrapper {
+  padding-top: 130px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.client-description {
+  padding: 50px 0;
+}
+.clients {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.clients .client img {
+  width: 400px;
+  height: 400px;
+  border: 1px solid var(--color-brand);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.product-ratting {
+  padding-bottom: 5px;
+}
+
+.fill-icon {
+  color: #ffc014;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.empty-icon {
+  color: #aeaeae;
+  width: 12px;
+  height: 12px;
+  opacity: 0.25;
+}
+
+.ratting-d {
+  font-weight: 400;
+  font-size: 14.6912px;
+  color: #a2a2a2;
+  margin-left: 6px;
+}
+
+/* =========================
    brand style
 ============================ */
 .brand-section-title {
@@ -341,7 +394,7 @@ section {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  row-gap: 1.875rem;
+  gap: 1.875rem;
   padding-top: 3.125rem;
 }
 
